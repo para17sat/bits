@@ -1,180 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bits</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Bite </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sen:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png"
+        href="//bitetoothpastebits.com/cdn/shop/t/313/assets/favicon-32_32x32.png?v=116657660238917921101734745512" />
+    <style>
+        body {
+            font-family: 'Playfair Display';
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .scrolling-logos {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        .scroll-container {
+            overflow: hidden;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container d-flex align-items-center justify-content-between">
-            <img style="height: 10vh;" src="https://via.placeholder.com/150" alt="Logo">
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto d-flex gap-4">
-                    <li class="nav-item">Shop</li>
-                    <li class="nav-item">About</li>
-                    <li class="nav-item">Contact</li>
-                </ul>
+    <header
+        style="background-image: url('//bitetoothpastebits.com/cdn/shop/files/jpeg-optimizer_2024.07.01_homepage_hero_desktop_2.jpg?v=1720816230&amp;width=3840'); height: 700px; background-size: cover; background-position: center;"
+        class="custom-header d-flex flex-column p-0 border-bottom border-dark">
+        <div class="d-flex bg-transparent bg-lg-light px-3 border border-dark">
+            <div class="d-flex flex-row gap-0 gap-lg-5 align-items-center w-100">
+                <img src="biteicon (1).png" alt="logo" class="w-25 order-2 order-lg-1 d-lg-none">
+                <h1 class="d-none d-lg-block ms-5">Bite</h1>
+                <nav class="navbar navbar-expand-lg bg-body-white order-lg-2 w-25">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse show w-lg-75" id="navbarNav">
+                            <ul class="navbar-nav ms-auto p-1">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black active fs-5 text-uppercase" aria-current="page"
+                                        href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black active fs-5 text-uppercase" aria-current="page"
+                                        href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black active fs-5 text-uppercase" aria-current="page"
+                                        href="#">Our impact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-    
-            <div class="d-flex align-items-center gap-3">
-                <i class="fa-regular fa-user fa-2x"></i>
-                <i class="fa-solid fa-bag-shopping fa-2x"></i>
+            <div class="d-flex flex-row gap-2 py-3">
+                <i class="bi bi-person fs-1 fs-lg-5"></i>
+                <i class="bi bi-bag fs-1 fs-lg-5"></i>
             </div>
         </div>
-    </nav>
-    
-    <div class="text-white d-flex align-items-center justify-content-center" style="background-image: url('https://via.placeholder.com/1920x1080'); background-size: cover; background-position: center; height: 80vh;">
-        <div class="container d-flex">
-            <div class="row col-12 col-md-3">
-                <h1>It's time to brush better.</h1>
-                <p>Clean up your routine with Toothpaste Bits. No plastic, no harsh chemicals – just a better way to brush your teeth.</p>
-                <button class="bg-dark text-white py-2">SHOW NOW</button>
+        <div class="d-flex flex-row">
+            <div
+                class=" p-5 text-center d-flex flex-column gap-0 justify-content-center align-items-center align-items-lg-start">
+                <h1 class="text-light fs-1">It's time to brush better.</h1>
+                <p class="text-light fs-5">
+                    Clean up your routine with Toothpaste Bits. No plastic, no harsh chemicals – just a better way to
+                    brush your teeth.
+                </p>
+                <a href="#" class="bg-black p-2 text-decoration-none text-light w-50 py-lg-3">SHOP NOW</a>
             </div>
+    </header>
+    <div class="scroll-container border border-dark">
+        <div class="scrolling-logos d-flex flex-row gap-2 p-1">
+            <img src="//bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550" alt=""
+                class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/oprah-magazine-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/cosmopolitan-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/womens-health-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/vogue-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/goop-113023.png?v=1701383679&amp;width=550" alt=""
+                class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/elle-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
+            <img src="https://bitetoothpastebits.com/cdn/shop/files/people-logo-113023.png?v=1701383679&amp;width=550"
+                alt="" class="w-100">
         </div>
     </div>
-
-    <div class="co">
-        <img src="https://via.placeholder.com/1200x500" class="img-fluid w-100" alt="Featured Image">
-    </div>
-
-    <div class="product container text-center my-5">
-        <h2 class="mt-5 mb-3">How To Use</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Product 1">
-                <h3>Grab a Toothpaste Bit</h3>
+    <section class="d-flex flex-column gap-2">
+        <h2 class="text-center p-3">How to Use It</h2>
+        <div class="row p-2 gap-2 justify-content-center">
+            <div class="col-sm-12 col-lg-3 d-flex flex-column justify-content-center">
+                <img src="photo-1.jpg" alt="" class="img-fluid">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-1-circle fs-4"></i>
+                    <span class="fs-4">Grab a Toothpaste Bit</span>
+                </div>
                 <p>A single Bit is all you need each time.</p>
             </div>
-            <div class="col-md-4">
-                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Product 2">
-                <h3>Chew your Bit</h3>
-                <p>A soft paste will form in your mouth.</p>
+            <div class="col-sm-12 col-lg-3 d-flex flex-column justify-content-center">
+                <img src="photo-2.jpg" alt="" class="img-fluid">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-2-circle fs-4"></i>
+                    <span class="fs-4">Chew your Bit</span>
+                </div>
+                <p>A single Bit is all you need each time.</p>
             </div>
-            <div class="col-md-4">
-                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Product 3">
-                <h3>Brush with a wet toothbrush</h3>
-                <p>It'll foam up, just like regular toothpaste.</p>
+            <div class="col-sm-12 col-lg-3 d-flex flex-column justify-content-center">
+                <img src="photo-3.jpg" alt="" class="img-fluid">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-3-circle fs-4"></i>
+                    <span class="fs-4">Brush with a wet toothbrush</span>
+                </div>
+                <p>A single Bit is all you need each time.</p>
             </div>
         </div>
-        <button class="bg-dark text-white py-2 px-5">SHOW NOW</button>
-    </div>
-
-    <div class="container-fluid bg-dark text-white">
-        <h1 class="text-center pt-5">21,000+ Reviews For A Reason</h1>
-        <div class="row gap-0 align-items-center justify-content-center gap-5">
-            <div class="col-12 col-md-5 my-5 border border-white">
-                <div class="container px-0">
-                    <div class="row px-0 flex-sm-column flex-lg-row">
-                        <div class="col-6 d-flex flex-column justify-content-between px-3">
-                            <p class="fs-5">I love the sustainable packaging and my teeth have gotten whiter since using this toothpaste. Easy to travel with!</p>
-                            <div class="d-flex flex-column">
-                                <h2>CHRISSY B.</h2>
-                                <ul class="list-unstyled d-flex gap-2">
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6 px-0"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt="Product Review"></div>
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="#" class="py-2 px-5 text-decoration-none text-light bg-dark text-center">SHOP NOW</a>
+        </div>
+    </section>
+    <div class="row gap-2 py-5 px-0 gap-4 justify-content-center align-items-center mt-5 bg-dark">
+        <div class="col-12 ">
+            <h2 class="text-center text-light">21,000+ Reviews+ For A Reason</h2>
+        </div>
+        <div class="col-12 d-flex bg-dark p-0 w-50 border border-light flex-lg-row flex-column">
+            <div class="d-flex flex-column gap-5 p-3">
+                <p class="text-light">No mess, cleans and whitens beautifully, and no plastic or repeat containers!</p>
+                <div class="mt-auto">
+                    <span class="text-light">Kathleen M.</span>
+                    <div class="d-flex gap-1">
+                        <i class="bi bi-star-fill text-info"></i>
+                        <i class="bi bi-star-fill text-info"></i>
+                        <i class="bi bi-star-fill text-info"></i>
+                        <i class="bi bi-star-fill text-info"></i>
+                        <i class="bi bi-star-fill text-info"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-5 my-5 border border-white">
-                <div class="container px-0">
-                    <div class="row px-0 flex-sm-column flex-lg-row">
-                        <div class="col-6 d-flex flex-column justify-content-between px-3">
-                            <p class="fs-5">I love the sustainable packaging and my teeth have gotten whiter since using this toothpaste. Easy to travel with!</p>
-                            <div class="d-flex flex-column">
-                                <h2>CHRISSY B.</h2>
-                                <ul class="list-unstyled d-flex gap-2">
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                    <li><i class="fa-solid fa-star text-success"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6 px-0"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt="Product Review"></div>
-                    </div>
+            <div class="div">
+                <img src="homepage-ugc-review-1.webp" class="image-fluid  w-100" alt="">
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <a href="#" class="bg-info text-light text-decoration-none py-3 px-5">READ ALL REVIEWS</a>
+        </div>
+    </div>
+    <div class="row p-3">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <h3>Shop By Category</h3>
+        </div>
+        <div class="col-12 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <div style="background-image: url('shop_by_category_toothpaste_bits_2-optimized.webp'); width: 300px; height: 350px; background-size: cover; background-position: center;"
+                class="p-3 col-3">
+                <span class="fs-3">TOOTHPASTE BITS</span>
+            </div>
+            <div style="background-image: url('shop_by_category_oral_care_2-optimized.webp'); width: 300px; height: 350px; background-size: cover; background-position: center;"
+                class="p-3 col-3">
+                <span class="fs-3">ORAL CARE</span>
+            </div>
+            <div style="background-image: url('jpeg-optimizer_shop_by_category_sets_1.webp'); width: 300px; height: 350px; background-size: cover; background-position: center;"
+                class="p-3 col-3">
+                <span class="fs-3">SETS</span>
+            </div>
+            <div style="background-image: url('shop_by_category_body_care_2-optimized.webp'); width: 300px; height: 350px; background-size: cover; background-position: center;"
+                class="p-3 col-3">
+                <span class="fs-3">BODY CARE</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 justify-content-center align-items-center d-flex">
+            <h2>Why Bits are Better</h2>
+        </div>
+        <div class="col-12 col-lg-4 order-lg-2">
+            <img src="BITE_MARCH_2023_03_0072_1.png" alt="" class="w-100">
+        </div>
+        <div class="col order-lg-1 d-flex flex-column gap-2 justify-content-center align-items-center px-3">
+            <div class="d-flex flex-column gap-3 justify-content-center align-items-center">
+                <i class="bi bi-hand-index fs-2"></i>
+                <span class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">PERFECNLTY
+                    PORTIONED</span>
+            </div>
+            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="bi bi-hand-index fs-2"></i>
+                <span class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">SINK
+                    FRIENDLY</span>
+            </div>
+            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="bi bi-globe-americas fs-2"></i>
+                <span class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">EARTH
+                    FRINEDLY</span>
+            </div>
+        </div>
+        <div class="col order-lg-3 d-flex flex-column gap-3 justify-content-center align-items-center px-3">
+            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="bi bi-star-fill fs-2"></i>
+                <span class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">BETTER-FOR-YOU
+                    FORMULATIONS</span>
+            </div>
+            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="bi bi-suitcase-fill fs-2"></i>
+                <span
+                    class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">SUITCASE-SAFE</span>
+            </div>
+            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="bi bi-slash-circle fs-2"></i>
+                <span class="w-50 d-flex justify-content-center align-items-center fs-6 text-center">STOPS THE SPERAD OF
+                    BACTERIA</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 justify-content-center align-items-center d-flex">
+            <h3>Shop Best Sellers</h3>
+        </div>
+        <div class="col row gap-0 p-5">
+            <div class="col gap-0 d-flex flex-column">
+                <img src="https://bitetoothpastebits.com/cdn/shop/files/pdp-hero-carousel-desktop-deodorant-kit-fragrance-free.jpg?v=1707416878&width=2244" alt=""
+                    class=" img-fluid order-1 order-lg-2 bg-secondary bg-lg-tertiary p-2">
+                <span class="order-2 order-lg-1 fs-6">TOOTHPASTE BITS FLUORIDE-FREE</span>
+                <a href="#" class="text-light bg-dark px-3 py-2 text-decoration-none order-3">ADD TO BAG</a>
+            </div>
+        </div>
+        <div class="col row gap-0 p-5">
+            <div class="col gap-0 d-flex flex-column">
+                <img src="https://bitetoothpastebits.com/cdn/shop/files/pdp-hero-carousel-tpb-wf-2oz-mint-fluoride_1cdc3501-5ff2-4aed-9d5b-514ed12dd018.jpg?v=1720741798&width=1944" alt=""
+                    class=" img-fluid order-1 order-lg-2 bg-secondary bg-lg-tertiary p-2">
+                <span class="order-2 order-lg-1 fs-6">TOOTHPASTE BITS FLUORIDE-FREE</span>
+                <a href="#" class="text-light bg-dark px-3 py-2 text-decoration-none order-3">ADD TO BAG</a>
+            </div>
+        </div>
+        <div class="col row gap-0 p-5">
+            <div class="col gap-0 d-flex flex-column">
+                <img src="pc-mouthwash-no-bg.webp" alt=""
+                    class=" img-fluid order-1 order-lg-2 bg-secondary bg-lg-tertiary p-2">
+                <span class="order-2 order-lg-1 fs-6">TOOTHPASTE BITS FLUORIDE-FREE</span>
+                <a href="#" class="text-light bg-dark px-3 py-2 text-decoration-none order-3">ADD TO BAG</a>
+            </div>
+        </div>
+        <div class="col row gap-0 p-5">
+            <div class="col gap-0 d-flex flex-column">
+                <img src="pc-mouthwash-no-bg.webp" alt=""
+                    class=" img-fluid order-1 order-lg-2 bg-secondary bg-lg-tertiary p-2">
+                <span class="order-2 order-lg-1 fs-6">TOOTHPASTE BITS FLUORIDE-FREE</span>
+                <a href="#" class="text-light bg-dark px-3 py-2 text-decoration-none order-3">ADD TO BAG</a>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-container border border-dark">
+        <div class="scrolling-logos d-flex flex-row gap-2 p-1">
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column py-5 px-3 m-3 border border-dark">
+                <p class="fs-2">'Essentials that get the job done with super-efficient results.'</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://bitetoothpastebits.com/cdn/shop/files/forbes-logo-113023.png?v=1701383679&amp;width=550"
+                        alt="" class="w-75">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container text-center py-5">
-        <h1 class="fw-bold">Why Bits are Better</h1>
-        <div class="row align-items-center mt-4">
-            <div class="col-md-4 text-center">
-                <i class="feature-icon fa-regular fa-hand"></i>
-                <h5 class="mt-3">PERFECTLY PORTIONED</h5>
-                <p>Stop wasting money by using more toothpaste than you need.</p>
-                
-                <i class="feature-icon fa-regular fa-star"></i>
-                <h5 class="mt-4">BETTER-FOR-YOU FORMULATIONS</h5>
-                <p>A dry tablet means we can use less-harmful ingredients and still protect your teeth.</p>
-
-                <i class="feature-icon fa-solid fa-sink"></i>
-                <h5 class="mt-4">SINK-FRIENDLY</h5>
-                <p>Our tablets leave less mess in your sink because no glycerine - what makes most toothpaste paste - means no sticky goop.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/500x500" class="img-fluid">
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="feature-icon fa-solid fa-suitcase"></i>
-                <h5 class="mt-3">SUITCASE-SAFE</h5>
-                <p>No more toothpaste explosions in your bag. Just throw a few Bits in your pack and you're good to go.</p>
-
-                <i class="feature-icon fa-solid fa-earth"></i>
-                <h5 class="mt-4">EARTH-FRIENDLY</h5>
-                <p>Infinitely refillable with no plastic toothpaste tubes, our Bits are better for our earth and oceans.</p>
-
-                <i class="feature-icon fa-solid fa-virus"></i>
-                <h5 class="mt-4">STOPS THE SPREAD OF BACTERIA</h5>
-                <p>The top of a toothpaste tube can transfer bacteria from your partner's brush to your mouth. Our Bits can stop the spread.</p>
-            </div>
+    <section class="d-flex justify-content-center align-items-center p-5">
+        <h2>FAQs</h2>
+    </section>
+    <div class="d-flex flex-column gap-2 p-5">
+        <div class="column d-flex flex-row gap-5 border-dark">
+            <p class="fs-4">Are Toothpaste Bits good for sensitive teeth?</p>
+            <i class="bi bi-caret-down ms-auto fs-3"></i>
+        </div>
+        <div class="column d-flex flex-row gap-5 border-dark">
+            <p class="fs-4">How do subscriptions work?</p>
+            <i class="bi bi-caret-down ms-auto fs-3"></i>
+        </div>
+        <div class="column d-flex flex-row gap-5 border-dark">
+            <p class="fs-4">Can I purchase just the refill pouches first?</p>
+            <i class="bi bi-caret-down ms-auto fs-3"></i>
+        </div>
+        <div class="column d-flex flex-row gap-5 border-dark">
+            <p class="fs-4">What is the shelf life?</p>
+            <i class="bi bi-caret-down ms-auto fs-3"></i>
+        </div>
+        <div class="column d-flex flex-row gap-5 border-dark">
+            <p class="fs-4">How do I use Toothpaste Bits?</p>
+            <i class="bi bi-caret-down ms-auto fs-3"></i>
         </div>
     </div>
-
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Shop Best Sellers</h1>
-        <div class="row my-5">
-            <div class="col-6 col-lg-3"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt=""><button class="w-100 py-2 text-white bg-dark">ADD TO BAG</button></div>
-            <div class="col-6 col-lg-3"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt=""><button class="w-100 py-2 text-white bg-dark">ADD TO BAG</button></div>
-            <div class="col-6 col-lg-3"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt=""><button class="w-100 py-2 text-white bg-dark">ADD TO BAG</button></div>
-            <div class="col-6 col-lg-3"><img src="https://via.placeholder.com/400x400" class="img-fluid w-100" alt=""><button class="w-100 py-2 text-white bg-dark">ADD TO BAG</button></div>
-        </div>
-    </div>
-
-    <div class="container py-5">
-        <h1 class="text-center mb-4">FAQs</h1>
-        <div class="accordion" id="faqAccordion">
-            <!-- FAQ items here... -->
-        </div>
-    </div>
-
-    <footer class="pt-5 pb-4 border-top border-light bg-dark text-white">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Footer content here... -->
+    <footer class="row bg-dark text-light py-5 px-4 gap-4 flex-lg-nowrap">
+        <div class="col-12 col-lg-5 d-flex flex-column gap-4">
+            <div class="top">
+                <span class="text-uppercase small">Stay in the Know</span>
+                <p class="fw-bold fs-5 mb-3">Sign up for 10% off your first order.</p>
+                <div class="border-bottom d-flex align-items-center">
+                    <input type="text" class=" bg-transparent border-0 text-light" placeholder="Enter email address">
+                </div>
+                <button class="btn btn-link text-light px-0 mt-3 text-decoration-none fw-semibold">Subscribe</button>
             </div>
+            <div class="d-flex justify-content-start flex-wrap gap-4 mt-4">
+                <i class="bi bi-gender-female fs-1"></i>
+                <i class="">icon icon--cruelty-free-badge-footer</i>
+                <i class="">icon icon--b-corp</i>
+                <i class="icon icon--oa-badge"></i>
+            </div>
+        </div>
+        <div class="col-6 col-lg-auto">
+            <span class="text-uppercase fw-bold small">Shop</span>
+            <ul class="list-unstyled mt-2">
+                <li><a href="#" class="text-light text-decoration-none">All Products</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Oral Care</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Body</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Sets</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-auto">
+            <span class="text-uppercase fw-bold small">Learn</span>
+            <ul class="list-unstyled mt-2">
+                <li><a href="#" class="text-light text-decoration-none">Ingredients</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Sustainability</a></li>
+                <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Store Locator</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-auto">
+            <span class="text-uppercase fw-bold small">Help</span>
+            <ul class="list-unstyled mt-2">
+                <li><a href="#" class="text-light text-decoration-none">Account</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Wholesale</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Affiliate Program</a></li>
+                <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-auto">
+            <span class="text-uppercase fw-bold small">Follow</span>
+            <ul class="list-unstyled mt-2">
+                <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-light text-decoration-none">TikTok</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="col-12 w-100 order-lg-last mt-4 text-center text-lg-start small d-lg-none">
+            <p class="mb-1">© 2025 Bite. All Rights Reserved.</p>
+            <a href="#" class="text-light text-decoration-none me-3">Privacy policy</a>
+            <a href="#" class="text-light text-decoration-none me-3">Terms of service</a>
+            <a href="#" class="text-light text-decoration-none me-3">Shipping policy</a>
+            <a href="mailto:hello@bitetoothpastebits.com"
+                class="text-light text-decoration-none">hello@bitetoothpastebits.com</a>
         </div>
     </footer>
-</body>
-</html>
 
+</body>
+
+</html>
  
  
